@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            width: 300px;
+            height: 420px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+        .contact-info i {
+            margin-right: 5px;
+        }
+
+        .gradient-background {
+            background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+            background-size: 180% 180%;
+            animation: gradient-animation 18s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+        }
+        body{
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card gradient-background">
+        <img src="https://media.licdn.com/dms/image/D5603AQFoMpiwwKJfpg/profile-displayphoto-shrink_800_800/0/1699256517298?e=1712188800&v=beta&t=05S6ehovPREqhVEJpk9eLufY5wWJkB67uhCnn6KNiGQ" alt="Profile Picture" class="profile-picture">
+        <h2>Prashan jeet</h2>
+        <p>software developer</p>
+
+        <div class="contact-info">
+            <a href="tel:+123456789" style="background-color: aqua; margin: 3px 3px ;color: blue;"><i class="fas fa-phone"></i> +123456789</a>
+            <a href="mailto:prashanjeet100@gmail.com" style="background-color: aqua; margin: 3px 3px ; color: blue;"><i class="fas fa-envelope"></i> prashanjeet100@gmail.com</a>
+            <a href="https://www.linkedin.com/in/prashan-jeet-kumar-644748254/" target="_blank" style="background-color: aqua; margin: 3px 3px ;color: blue;"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+        </div>
+    </div>
+
+</body>
+</html>
